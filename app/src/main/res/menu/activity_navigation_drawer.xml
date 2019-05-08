@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_dashbord_icon"
+            android:title="DashBoard" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_mood_icon"
+            android:title="Mood" />
+        <item
+            android:id="@+id/nav_calllogs"
+            android:icon="@drawable/ic_social_in_icon"
+            android:title="Social Interaction" />
+        <item
+            android:id="@+id/nav_socialapp"
+            android:icon="@drawable/ic_social_icon"
+            android:title="App Usage" />
+        <item
+            android:id="@+id/nav_googlefit"
+            android:icon="@drawable/ic_fitness_icon"
+            android:title="Fitness data" />
+        <item
+            android:id="@+id/nav_getCurrentLocation"
+            android:icon="@drawable/ic_location_icon"
+            android:title="CurrentLocation" />
+
+        <item
+            android:id="@+id/nav_work_location"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Work Location" />
+
+        <item
+            android:id="@+id/nav_graph"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood Graph" />
+        <item
+            android:id="@+id/nav_social"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Social Graph" />
+  <item
+            android:id="@+id/nav_step"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Step Graph" />
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_editprofile"
+                android:icon="@drawable/profilesettings"
+                android:title="Profile Setting" />
+            <item
+                android:id="@+id/nav_resetpassword"
+                android:icon="@drawable/resetpassword"
+                android:title="Reset Password" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

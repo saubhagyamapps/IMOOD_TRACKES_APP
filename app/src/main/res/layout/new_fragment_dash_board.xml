@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.DashBoardFragment">
+
+    <TextView
+        android:id="@+id/txtCurrentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="12 April 2019" />
+
+    <com.budiyev.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/progressBarStepCount"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/txtCurrentDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/step_count"
+        android:backgroundTint="@color/progress_color"
+        app:animateProgress="true"
+        app:backgroundStrokeColor="@color/gray_very_light"
+        app:backgroundStrokeWidth="3dp"
+        app:drawBackgroundStroke="true"
+        app:foregroundStrokeCap="butt"
+        app:foregroundStrokeColor="@color/progress_color"
+        app:foregroundStrokeWidth="5dp"
+        app:indeterminate="false"
+        app:indeterminateMinimumAngle="45"
+        app:indeterminateRotationAnimationDuration="1200"
+        app:indeterminateSweepAnimationDuration="600"
+        app:maximum="100"
+        app:progress="25"
+        app:progressAnimationDuration="100"
+        app:startAngle="270" />
+
+    <TextView
+        android:id="@+id/txtStepCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarStepCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progressBarCall"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/calls"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/gray_very_light"
+                app:backgroundStrokeWidth="3dp"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="@color/progress_color"
+                app:foregroundStrokeWidth="5dp"
+                app:indeterminate="false"
+                app:indeterminateMinimumAngle="45"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:maximum="100"
+                app:progressAnimationDuration="100"
+                app:startAngle="270" />
+
+            <TextView
+                android:id="@+id/txtCallTime"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="center"
+                android:text="Calls" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progressBarSocial"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/social_n"
+                android:backgroundTint="@color/colorPrimary"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/gray_very_light"
+                app:backgroundStrokeWidth="3dp"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="@color/colorPrimary"
+                app:foregroundStrokeWidth="5dp"
+                app:indeterminate="false"
+                app:indeterminateMinimumAngle="45"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:maximum="100"
+                app:progressAnimationDuration="100"
+                app:startAngle="270" />
+
+            <TextView
+                android:id="@+id/txtSocialTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Social" />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progressBarWorking"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/working"
+                android:backgroundTint="#a7e71e"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/gray_very_light"
+                app:backgroundStrokeWidth="3dp"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="#a7e71e"
+                app:foregroundStrokeWidth="5dp"
+                app:indeterminate="false"
+                app:indeterminateMinimumAngle="45"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:maximum="100"
+                app:progressAnimationDuration="100"
+                app:startAngle="270" />
+
+            <TextView
+                android:id="@+id/txtWorkingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Working" />
+        </LinearLayout>
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="vertical">
+
+
+              <com.budiyev.android.circularprogressbar.CircularProgressBar
+                  android:id="@+id/progressBarWalking"
+                  android:layout_width="80dp"
+                  android:layout_height="80dp"
+                  android:layout_gravity="center"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:background="@drawable/walking"
+                  app:animateProgress="true"
+                  app:backgroundStrokeColor="@color/gray_very_light"
+                  app:backgroundStrokeWidth="3dp"
+                  app:drawBackgroundStroke="true"
+                  android:backgroundTint="@color/colorPrimaryDark"
+                  app:foregroundStrokeCap="butt"
+                  app:foregroundStrokeColor="@color/colorPrimaryDark"
+                  app:foregroundStrokeWidth="5dp"
+                  app:indeterminate="false"
+                  app:indeterminateMinimumAngle="45"
+                  app:indeterminateRotationAnimationDuration="1200"
+                  app:indeterminateSweepAnimationDuration="600"
+                  app:maximum="100"
+                  app:progress="25"
+                  app:progressAnimationDuration="100"
+                  app:startAngle="270" />
+
+              <TextView
+                  android:id="@+id/txtWalkingTime"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:text="Walking" />
+          </LinearLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>
